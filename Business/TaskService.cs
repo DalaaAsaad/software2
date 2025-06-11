@@ -33,8 +33,8 @@ namespace NTierTodoApp.Business
         public void DeleteTask(int id)
         {
             var task = repository.GetById(id);
-            if (task != null)
-                repository.Delete(id);
+            if (task != null){
+                repository.Delete(id);}
         } 
     }
 }

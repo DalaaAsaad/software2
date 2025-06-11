@@ -35,7 +35,9 @@ namespace NTierTodoApp.Controllers
                 [HttpPost] 
         public IActionResult DeleteTask(int id) 
         {
+            //deleting the task
             taskService.DeleteTask(id);
+            //returning the value
             return RedirectToAction("Index"); 
         } 
 
